@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            scroll-behavior: smooth;
+        }
+      
+        .fourthsection {
+            background-color: rgb(3, 3, 56);
+            font-size: 20px;
+            
+        }
+
+        .contact {
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 40px 0px;
+            margin-right: 1000px;
+
+        }
+
+        .btn.btn2 {
+            display: inline-block;
+            background: #ff004f;
+            width: 150px;
+            font-size: 30px;
+            border-radius: 5px;
+            margin: 5px 145px;
+
+        }
+
+        .contactright form {
+            width: 50%;
+            margin: 50px 85px;
+        }
+
+        form input, form textarea {
+
+            width: 70%;
+            border: 0;
+            outline: none;
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            color: black;
+            font-size: 18px;
+            border-radius: 6px;
+
+        }
+        .flexcol{
+            color: aqua;
+            margin: 0px 10px;
+            
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            float: right;
+            margin-right: 100px;
+        }
+        @media (max-width: 740px){
+            .fourthsection{
+                height: 100vh;
+                width: 100vw;
+            }
+            .contact{
+                width: 100%;
+            }
+            .contactright{
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            img{
+                max-width: 50%;
+                
+            }
+            .btn.btn2{
+                margin-bottom: 50p0x;
+            }
+            body{
+                height: 100vh;
+                width: 100vh;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <section class="fourthsection">
+        <div id="contact">
+            <h2 class="contact"> Contact <span class="flexcol">Me</span></h2>
+            <img src="contact.png" alt="">
+        </div>
+        <div class="contactright">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required autocomplete="off">
+                <input type="email" name="email" placeholder="Your email" required autocomplete="off">
+                <input type="phone number" name="phone number" placeholder="Your Number" required autocomplete="off">
+                <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
